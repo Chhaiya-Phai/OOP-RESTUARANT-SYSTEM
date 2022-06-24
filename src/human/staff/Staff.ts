@@ -7,7 +7,7 @@ export enum StaffPossition{
     SECURITY = "Security",
 }
 
-export class Staff extends Person{
+export abstract class Staff extends Person{
     protected salary: number = 0;
     protected gender: Gender;
 

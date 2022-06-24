@@ -1,13 +1,15 @@
 import { Customer } from "./human/customer/Customer";
 import { Gender } from "./human/Person";
-import { Staff, StaffPossition } from "./human/staff/Staff";
+import { Chef } from "./human/staff/Chef";
+import { StaffPossition } from "./human/staff/Staff";
 import { Room } from "./rooms/Room";
 import { RoomManager } from "./rooms/RoomsManager";
 import { RoomStatus } from "./rooms/RoomStatus";
 import { Table } from "./rooms/Table";
 
 // staff //
-let chef1 = new Staff(1, "chef1", 25, Gender.MALE, StaffPossition.CHEF);
+let chef1 = new Chef(1, "Mr.Chef1", 25, Gender.MALE, StaffPossition.CHEF);
+chef1.setSalary(1000);
 
 // create room //
 let vip = new Room(1);
@@ -24,4 +26,4 @@ table1.setCustomer(ttr);
 
 // main //
 console.log(table1.getCustomer());
-console.log(chef1);
+
