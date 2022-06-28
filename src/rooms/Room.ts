@@ -4,7 +4,7 @@ import { Table } from "./Table";
 export class Room{
     table: Table[] = [];
     roomStatus: RoomStatus; // status of each room depand of customer //
-    constructor(private id:number) {}
+    constructor(private id:number, protected status:RoomStatus) {}
 
     getNumberOfTable(){
         return this.table.length;

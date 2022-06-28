@@ -11,8 +11,9 @@ import { Table } from "./rooms/Table";
 let chef1 = new Chef(1, "Mr.Chef1", 25, Gender.MALE, StaffPossition.CHEF);
 chef1.setSalary(1000);
 
+
 // create room //
-let vip = new Room(1);
+let vip = new Room(1, RoomStatus.VIP);
 
 // add table //
 let table1 = new Table(1);
@@ -23,7 +24,8 @@ vip.addTable(table2);
 let ttr = new Customer(1, "TTR ZIN", 18, Gender.MALE);
 let PSN18 = new Customer(2, "PSN 18", 20, Gender.ORTHER);
 table1.setCustomer(ttr);
+table2.setCustomer(PSN18);
 
 // main //
-console.log(table1.getCustomer());
+console.log(vip);
 

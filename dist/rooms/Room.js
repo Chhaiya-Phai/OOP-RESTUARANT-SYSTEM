@@ -2,8 +2,9 @@
 exports.__esModule = true;
 exports.Room = void 0;
 var Room = /** @class */ (function () {
-    function Room(id) {
+    function Room(id, status) {
         this.id = id;
+        this.status = status;
         this.table = [];
     }
     Room.prototype.getNumberOfTable = function () {
