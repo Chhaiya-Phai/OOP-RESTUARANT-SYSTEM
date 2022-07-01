@@ -27,5 +27,6 @@ table1.setCustomer(ttr);
 table2.setCustomer(PSN18);
 
 // main //
+
 console.log(vip);
 
