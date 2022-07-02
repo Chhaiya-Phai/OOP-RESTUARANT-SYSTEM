@@ -2,14 +2,14 @@ import { Customer } from "../human/customer/Customer";
 
 export class Table{
     private id: number;
-    cutomer?: Customer;
+    cutomer?: Customer[] = [];
 
     constructor(id: number){
         this.id = id;
     }
 
     setCustomer(newCustomer: Customer){
-        this.cutomer = newCustomer;
+        this.cutomer?.push(newCustomer);
     }
 
     getCustomer(){

@@ -1,9 +1,13 @@
 import { Customer } from "./customer/Customer";
-import { Staff } from "./staff/Staff";
+import { Gender } from "./Person";
+import { Staff, StaffPossition } from "./staff/Staff";
 
 export class HumanManager{
     private customer: Customer[] = [];
     private staff: Staff[] = [];
+
+    constructor(protected name: string,){}
+
 
     addCustomer(newCustomer: Customer){
         this.customer.push(newCustomer);
